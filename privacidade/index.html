@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Tinpety</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.75;
+    }
+    header {
+      background: #7c3aed;
+      color: #fff;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 6px; }
+    header p  { opacity: .85; font-size: .95rem; }
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      color: #7c3aed;
+      margin: 36px 0 10px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid #ede9fe;
+    }
+    h3 {
+      font-size: 1rem;
+      color: #444;
+      margin: 20px 0 6px;
+    }
+    p  { margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 20px; }
+    li { margin-bottom: 6px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 20px;
+      font-size: .92rem;
+    }
+    th {
+      background: #ede9fe;
+      color: #5b21b6;
+      text-align: left;
+      padding: 10px 12px;
+    }
+    td { padding: 9px 12px; border-bottom: 1px solid #e5e7eb; }
+    tr:last-child td { border-bottom: none; }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 99px;
+      font-size: .8rem;
+      font-weight: 600;
+    }
+    .badge-green  { background: #dcfce7; color: #166534; }
+    .badge-yellow { background: #fef9c3; color: #854d0e; }
+    .badge-red    { background: #fee2e2; color: #991b1b; }
+    a { color: #7c3aed; }
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: .85rem;
+      color: #888;
+      border-top: 1px solid #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🐾 Política de Privacidade</h1>
+  <p>Tinpety · Última atualização: 31 de maio de 2026</p>
+</header>
+
+<main>
+
+  <p>
+    Esta Política de Privacidade descreve como o aplicativo <strong>Tinpety</strong>
+    ("nós", "nosso") coleta, usa, armazena e protege as informações dos usuários
+    ("você") ao utilizar nosso serviço. Ao usar o Tinpety, você concorda com
+    os termos desta política.
+  </p>
+
+  <!-- 1 -->
+  <h2>1. Quem somos</h2>
+  <p>
+    O Tinpety é um aplicativo de combinação e adoção de pets desenvolvido por
+    <strong>Ragner — Tinpety</strong>, com sede no Brasil.
+    Dúvidas sobre privacidade: <a href="mailto:privacidade@tinpety.com">privacidade@tinpety.com</a>
+  </p>
+
+  <!-- 2 -->
+  <h2>2. Dados que coletamos</h2>
+
+  <h3>2.1 Dados da conta de usuário</h3>
+  <table>
+    <tr><th>Dado</th><th>Finalidade</th><th>Necessidade</th></tr>
+    <tr><td>Nome completo</td><td>Identificação no app</td><td><span class="badge badge-red">Obrigatório</span></td></tr>
+    <tr><td>Endereço de e-mail</td><td>Login, recuperação de conta, comunicação</td><td><span class="badge badge-red">Obrigatório</span></td></tr>
+    <tr><td>Senha</td><td>Autenticação (armazenada em hash pelo Firebase Auth)</td><td><span class="badge badge-red">Obrigatório</span></td></tr>
+    <tr><td>Foto de perfil</td><td>Exibição no app</td><td><span class="badge badge-yellow">Opcional</span></td></tr>
+    <tr><td>Cidade de localização</td><td>Buscar pets próximos</td><td><span class="badge badge-red">Obrigatório</span></td></tr>
+    <tr><td>Conta Google (Sign-In)</td><td>Login via Google</td><td><span class="badge badge-yellow">Opcional</span></td></tr>
+  </table>
+
+  <h3>2.2 Dados dos pets cadastrados</h3>
+  <table>
+    <tr><th>Dado</th><th>Finalidade</th><th>Necessidade</th></tr>
+    <tr><td>Nome, espécie e raça</td><td>Perfil do pet</td><td><span class="badge badge-red">Obrigatório</span></td></tr>
+    <tr><td>Data de nascimento, sexo, peso, altura, cor</td><td>Informações do perfil</td><td><span class="badge badge-yellow">Opcional</span></td></tr>
+    <tr><td>Fotos do pet</td><td>Exibição no app e compartilhamento</td><td><span class="badge badge-yellow">Opcional</span></td></tr>
+    <tr><td>Alergias, doenças e vacinas</td><td>Saúde do pet (visível ao tutor)</td><td><span class="badge badge-yellow">Opcional</span></td></tr>
+    <tr><td>Cidade de nascimento e moradia</td><td>Busca geográfica</td><td><span class="badge badge-yellow">Opcional</span></td></tr>
+    <tr><td>Status de adoção</td><td>Listagem de pets disponíveis para adoção</td><td><span class="badge badge-yellow">Opcional</span></td></tr>
+  </table>
+
+  <h3>2.3 Dados de localização</h3>
+  <p>
+    Com sua permissão, coletamos a localização <strong>precisa</strong> (GPS) e
+    <strong>aproximada</strong> (rede) do dispositivo para mostrar pets próximos a você.
+    A localização é usada <em>somente</em> durante o uso ativo do app (foreground);
+    <strong>não coletamos localização em segundo plano</strong>.
+  </p>
+
+  <h3>2.4 Mensagens e interações</h3>
+  <ul>
+    <li>Mensagens de chat entre usuários (combinação e adoção) são armazenadas no Firestore.</li>
+    <li>Interações de curtir/não curtir entre pets são registradas anonimamente.</li>
+    <li>Denúncias enviadas por usuários são armazenadas para análise da equipe.</li>
+    <li>Tickets de suporte enviados para nossa equipe.</li>
+  </ul>
+
+  <h3>2.5 Dados de dispositivo e uso</h3>
+  <table>
+    <tr><th>Dado</th><th>Finalidade</th></tr>
+    <tr><td>Token FCM (Firebase Cloud Messaging)</td><td>Envio de notificações push</td></tr>
+    <tr><td>Dados de uso do app (Firebase Analytics)</td><td>Melhorias do produto</td></tr>
+    <tr><td>ID de publicidade (Advertising ID)</td><td>Exibição de anúncios personalizados via Google AdMob</td></tr>
+    <tr><td>Câmera</td><td>Fotografar o pet (imagem não é armazenada automaticamente — só quando você confirmar)</td></tr>
+    <tr><td>Credenciais biométricas</td><td>Armazenadas <strong>localmente no dispositivo</strong> (nunca enviadas ao servidor)</td></tr>
+  </table>
+
+  <!-- 3 -->
+  <h2>3. Como usamos os dados</h2>
+  <ul>
+    <li>Criar e gerenciar sua conta e o perfil dos seus pets.</li>
+    <li>Exibir pets compatíveis para combinação (matching) e adoção.</li>
+    <li>Permitir chat entre tutores de pets combinados ou interessados em adoção.</li>
+    <li>Enviar notificações de novos matches, mensagens e transferências.</li>
+    <li>Exibir anúncios relevantes por meio do Google AdMob.</li>
+    <li>Analisar o uso do app para melhorar a experiência (Firebase Analytics).</li>
+    <li>Investigar denúncias e garantir a segurança da comunidade.</li>
+    <li>Responder solicitações de suporte.</li>
+  </ul>
+
+  <!-- 4 -->
+  <h2>4. Compartilhamento de dados com terceiros</h2>
+  <p>
+    Não vendemos seus dados. Compartilhamos apenas com os provedores de serviço abaixo,
+    estritamente para operar o aplicativo:
+  </p>
+  <table>
+    <tr><th>Provedor</th><th>Serviço</th><th>Política</th></tr>
+    <tr>
+      <td>Google Firebase</td>
+      <td>Autenticação, banco de dados, armazenamento de fotos, analytics, notificações push</td>
+      <td><a href="https://firebase.google.com/support/privacy" target="_blank">Ver política</a></td>
+    </tr>
+    <tr>
+      <td>Google AdMob</td>
+      <td>Exibição de anúncios</td>
+      <td><a href="https://support.google.com/admob/answer/6128543" target="_blank">Ver política</a></td>
+    </tr>
+    <tr>
+      <td>Google Maps Platform</td>
+      <td>Busca de endereços e exibição de mapas</td>
+      <td><a href="https://cloud.google.com/maps-platform/terms" target="_blank">Ver política</a></td>
+    </tr>
+    <tr>
+      <td>Google ML Kit</td>
+      <td>Tradução de textos (processamento <strong>local</strong>, sem envio de dados)</td>
+      <td><a href="https://developers.google.com/ml-kit/terms" target="_blank">Ver política</a></td>
+    </tr>
+  </table>
+
+  <!-- 5 -->
+  <h2>5. Publicidade e ID de Publicidade</h2>
+  <p>
+    Usamos o <strong>Google AdMob</strong> para exibir anúncios. O AdMob pode usar
+    o <strong>ID de Publicidade (Advertising ID)</strong> do seu dispositivo para
+    personalizar anúncios com base nos seus interesses.
+  </p>
+  <p>
+    Você pode redefinir ou desativar a personalização de anúncios em:
+    <strong>Configurações do Android → Google → Anúncios → Excluir ID de publicidade</strong>
+    (Android 12+) ou <strong>Cancelar personalização de anúncios</strong> (versões anteriores).
+  </p>
+
+  <!-- 6 -->
+  <h2>6. Retenção dos dados</h2>
+  <table>
+    <tr><th>Dado</th><th>Período de retenção</th></tr>
+    <tr><td>Conta e pets</td><td>Enquanto a conta estiver ativa ou até exclusão solicitada</td></tr>
+    <tr><td>Mensagens de chat</td><td>Enquanto a conversa existir no app</td></tr>
+    <tr><td>Fotos de pets</td><td>Enquanto o pet estiver cadastrado</td></tr>
+    <tr><td>Logs de analytics</td><td>Até 14 meses (padrão Firebase Analytics)</td></tr>
+    <tr><td>Denúncias</td><td>Até 2 anos após o encerramento da análise</td></tr>
+    <tr><td>Dados biométricos</td><td>Somente no dispositivo — removidos ao desinstalar o app</td></tr>
+  </table>
+
+  <!-- 7 -->
+  <h2>7. Seus direitos (LGPD)</h2>
+  <p>
+    Conforme a <strong>Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018)</strong>,
+    você tem direito a:
+  </p>
+  <ul>
+    <li><strong>Acesso:</strong> solicitar cópia dos dados que temos sobre você.</li>
+    <li><strong>Correção:</strong> corrigir dados incompletos ou desatualizados.</li>
+    <li><strong>Exclusão:</strong> solicitar a exclusão da sua conta e dados pessoais.</li>
+    <li><strong>Portabilidade:</strong> receber seus dados em formato estruturado.</li>
+    <li><strong>Revogação de consentimento:</strong> retirar permissões de localização, câmera e notificações a qualquer momento pelas configurações do Android.</li>
+    <li><strong>Oposição:</strong> opor-se ao uso dos seus dados para fins de publicidade personalizada.</li>
+  </ul>
+  <p>
+    Para exercer qualquer direito, envie um e-mail para
+    <a href="mailto:privacidade@tinpety.com">privacidade@tinpety.com</a>
+    com o assunto <strong>"Direitos LGPD"</strong>. Responderemos em até 15 dias úteis.
+  </p>
+
+  <!-- 8 -->
+  <h2>8. Exclusão de conta e dados</h2>
+  <p>
+    Para excluir sua conta e todos os dados associados (perfil, pets, fotos, mensagens),
+    acesse no app: <strong>Configurações → Minha Conta → Excluir Conta</strong>,
+    ou envie um e-mail para
+    <a href="mailto:privacidade@tinpety.com">privacidade@tinpety.com</a>.
+    A exclusão é irreversível e será concluída em até <strong>30 dias</strong>.
+  </p>
+
+  <!-- 9 -->
+  <h2>9. Segurança</h2>
+  <ul>
+    <li>Todas as comunicações usam <strong>HTTPS/TLS</strong>.</li>
+    <li>Senhas são gerenciadas pelo <strong>Firebase Authentication</strong> (nunca armazenamos senhas em texto puro).</li>
+    <li>Credenciais biométricas ficam armazenadas apenas no seu dispositivo usando <strong>Android Keystore</strong>.</li>
+    <li>O acesso ao banco de dados é protegido por <strong>Firestore Security Rules</strong>, garantindo que cada usuário acesse apenas seus próprios dados.</li>
+  </ul>
+
+  <!-- 10 -->
+  <h2>10. Crianças</h2>
+  <p>
+    O Tinpety <strong>não é destinado a menores de 13 anos</strong>. Não coletamos
+    intencionalmente dados de crianças. Se você acredita que coletamos dados de um menor,
+    entre em contato em <a href="mailto:privacidade@tinpety.com">privacidade@tinpety.com</a>.
+  </p>
+
+  <!-- 11 -->
+  <h2>11. Alterações nesta Política</h2>
+  <p>
+    Podemos atualizar esta política periodicamente. Quando houver alterações relevantes,
+    notificaremos você por e-mail ou por notificação no app. A data da última atualização
+    está sempre indicada no topo desta página.
+  </p>
+
+  <!-- 12 -->
+  <h2>12. Contato</h2>
+  <p>
+    <strong>Responsável pelo tratamento de dados:</strong> Ragner — Tinpety<br>
+    <strong>E-mail:</strong> <a href="mailto:privacidade@tinpety.com">privacidade@tinpety.com</a><br>
+    <strong>App:</strong> Tinpety — disponível na Google Play Store
+  </p>
+
+</main>
+
+<footer>
+  © 2026 Tinpety · <a href="mailto:privacidade@tinpety.com">privacidade@tinpety.com</a>
+</footer>
+
+</body>
+</html>
