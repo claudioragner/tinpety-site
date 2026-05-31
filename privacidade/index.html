@@ -74,94 +74,142 @@
 <p class="subtitle">Tinpety &nbsp;|&nbsp; Versão 1.0 &nbsp;|&nbsp; Atualização: 31 de maio de 2026</p>
 
 <div class="highlight">
-  Este documento descreve como o <strong>Tinpety</strong> coleta, usa, armazena e protege
-  seus dados pessoais. Ao utilizar o aplicativo, você concorda com os termos aqui descritos,
-  em conformidade com a <strong>LGPD (Lei nº 13.709/2018)</strong>.
+  Leia atentamente este documento antes de utilizar o aplicativo. Ao criar uma conta ou
+  continuar usando o <strong>Tinpety</strong>, você declara ter lido, compreendido e concordado
+  com esta Política de Privacidade, em conformidade com a
+  <strong>LGPD (Lei nº 13.709/2018)</strong>.
 </div>
 
 <!-- 1 -->
-<h2>1. Quem somos</h2>
+<h2>1. Sobre o Tinpety e esta Política</h2>
 <p>
-  O <strong>Tinpety</strong> é um aplicativo de combinação e adoção de pets desenvolvido por
-  <strong>Ragner — Tinpety</strong>, com sede no Brasil.
-  Para dúvidas sobre privacidade, entre em contato pelo e-mail
+  O <strong>Tinpety</strong> é uma plataforma digital destinada a donos e tutores de animais
+  domésticos, com funcionalidades de registro de animais, busca por compatibilidade
+  (matchmaking), adoção responsável e troca de informações entre tutores.
+</p>
+<p>
+  Esta Política de Privacidade descreve como coletamos, usamos, armazenamos, compartilhamos
+  e protegemos os seus dados pessoais ao utilizar o aplicativo. O responsável pelo
+  tratamento dos dados é <strong>Tinpety</strong>, com sede no Brasil.
+  Para dúvidas, entre em contato pelo e-mail
   <a href="mailto:privacidade@tinpety.com">privacidade@tinpety.com</a>.
 </p>
 
 <!-- 2 -->
 <h2>2. Dados que coletamos</h2>
+
 <p><strong>2.1. Dados da conta de usuário:</strong></p>
 <ul>
   <li><strong>Nome completo</strong> — identificação no app (obrigatório);</li>
-  <li><strong>E-mail</strong> — login, recuperação de conta e comunicação (obrigatório);</li>
-  <li><strong>Senha</strong> — autenticação, armazenada em hash pelo Firebase Auth (obrigatório);</li>
+  <li><strong>E-mail</strong> — login, recuperação de conta e comunicações (obrigatório);</li>
+  <li><strong>Senha</strong> — autenticação, armazenada em hash seguro pelo Firebase Auth; nunca armazenamos senhas em texto puro (obrigatório);</li>
   <li><strong>Foto de perfil</strong> — exibição no app (opcional);</li>
   <li><strong>Cidade</strong> — busca de pets próximos (obrigatório);</li>
-  <li><strong>Conta Google</strong> — usado somente se você optar pelo login via Google (opcional).</li>
+  <li><strong>Conta Google</strong> — somente se você optar pelo login via Google (opcional).</li>
 </ul>
 
 <p><strong>2.2. Dados dos pets cadastrados:</strong></p>
 <ul>
   <li><strong>Nome, espécie e raça</strong> — perfil do pet (obrigatório);</li>
-  <li><strong>Data de nascimento, sexo, peso, altura e cor</strong> — informações do perfil (opcional);</li>
-  <li><strong>Fotos do pet</strong> — exibição no app e compartilhamento (opcional);</li>
-  <li><strong>Alergias, doenças e vacinas</strong> — saúde do pet, visível somente ao tutor (opcional);</li>
-  <li><strong>Cidade de nascimento e moradia</strong> — busca geográfica (opcional);</li>
-  <li><strong>Status de adoção</strong> — listagem de pets disponíveis para adoção (opcional).</li>
+  <li><strong>Data de nascimento, sexo, peso, altura e cor</strong> — informações complementares do perfil (opcional);</li>
+  <li><strong>Fotos do pet</strong> — exibidas no app e compartilhadas entre usuários combinados (opcional);</li>
+  <li><strong>Alergias, doenças e vacinas</strong> — informações de saúde do pet, visíveis somente ao tutor cadastrado (opcional);</li>
+  <li><strong>Cidade de nascimento e moradia</strong> — usadas para busca geográfica (opcional);</li>
+  <li><strong>Status de adoção</strong> — indica se o pet está disponível para adoção (opcional).</li>
 </ul>
 
 <p><strong>2.3. Localização do dispositivo:</strong></p>
 <p>
-  Com sua permissão, coletamos a localização <strong>precisa</strong> (GPS) e
-  <strong>aproximada</strong> (rede) para mostrar pets próximos a você.
-  A localização é utilizada <strong>somente durante o uso ativo do app</strong> (foreground).
+  <strong>2.3.1.</strong> Com sua permissão, coletamos a localização <strong>precisa</strong> (GPS) e
+  <strong>aproximada</strong> (rede) para mostrar pets próximos a você. A localização é utilizada
+  <strong>somente durante o uso ativo do app</strong> (foreground).
   <strong>Não coletamos localização em segundo plano.</strong>
+</p>
+<p>
+  <strong>2.3.2.</strong> Sua localização é utilizada <strong>exclusivamente</strong> para
+  apresentar animais próximos. Ela nunca é compartilhada com outros usuários ou com
+  terceiros sem sua autorização explícita.
 </p>
 
 <p><strong>2.4. Mensagens e interações:</strong></p>
 <ul>
   <li>Mensagens de chat entre usuários (combinação e adoção) são armazenadas no Firestore;</li>
   <li>Interações de curtir/não curtir entre pets são registradas de forma anonimizada;</li>
-  <li>Denúncias enviadas por usuários são armazenadas para análise interna;</li>
-  <li>Tickets de suporte enviados para a equipe Tinpety.</li>
+  <li>Denúncias enviadas por usuários são armazenadas para análise interna da equipe;</li>
+  <li>Solicitações de parentesco, transferência de pets e tickets de suporte são registrados.</li>
 </ul>
 
 <p><strong>2.5. Dados de dispositivo e uso:</strong></p>
 <ul>
-  <li><strong>Token FCM</strong> — identificador de dispositivo utilizado para envio de notificações push;</li>
-  <li><strong>Dados de uso (Firebase Analytics)</strong> — estatísticas anônimas para melhoria do produto;</li>
-  <li><strong>ID de publicidade (Advertising ID)</strong> — utilizado pelo Google AdMob para exibição de anúncios;</li>
-  <li><strong>Câmera</strong> — acesso para fotografar o pet; a imagem só é salva após sua confirmação;</li>
-  <li><strong>Credenciais biométricas</strong> — armazenadas exclusivamente no dispositivo via Android Keystore, nunca enviadas ao servidor.</li>
+  <li><strong>Token FCM</strong> — identificador do dispositivo para envio de notificações push;</li>
+  <li><strong>Dados de uso (Firebase Analytics)</strong> — estatísticas anônimas de navegação para melhoria do produto;</li>
+  <li><strong>ID de publicidade (Advertising ID)</strong> — utilizado pelo Google AdMob para personalização de anúncios;</li>
+  <li><strong>Câmera</strong> — acesso para fotografar o pet; a imagem só é armazenada após sua confirmação explícita;</li>
+  <li><strong>Credenciais biométricas</strong> — armazenadas exclusivamente no dispositivo via Android Keystore; nunca enviadas ao servidor.</li>
 </ul>
 
 <!-- 3 -->
 <h2>3. Como usamos os dados</h2>
+<p>
+  <strong>3.1.</strong> Os dados coletados são utilizados exclusivamente para as seguintes finalidades:
+</p>
 <ul>
-  <li>Criar e gerenciar sua conta e o perfil dos seus pets;</li>
-  <li>Exibir pets compatíveis para combinação (matching) e adoção;</li>
+  <li>Criar, autenticar e gerenciar sua conta e o perfil dos seus pets;</li>
+  <li>Exibir pets compatíveis para combinação (matching) e adoção nas proximidades;</li>
   <li>Permitir chat entre tutores de pets combinados ou interessados em adoção;</li>
-  <li>Enviar notificações de novos matches, mensagens e transferências;</li>
+  <li>Enviar notificações de novos matches, mensagens, transferências e vínculos de parentesco;</li>
   <li>Exibir anúncios relevantes por meio do Google AdMob;</li>
-  <li>Analisar o uso do app para melhorias contínuas (Firebase Analytics);</li>
+  <li>Analisar padrões de uso para melhorias contínuas do aplicativo;</li>
   <li>Investigar denúncias e garantir a segurança da comunidade;</li>
-  <li>Responder solicitações de suporte.</li>
+  <li>Processar solicitações de suporte e atender aos seus direitos como titular.</li>
 </ul>
+<p>
+  <strong>3.2.</strong> O Tinpety <strong>não utiliza seus dados para finalidades não descritas</strong>
+  neste documento, nem os processa com base em interesses legítimos que se sobreponham
+  aos seus direitos como titular.
+</p>
 
 <!-- 4 -->
-<h2>4. Compartilhamento com terceiros</h2>
+<h2>4. Conteúdo publicado pelo usuário</h2>
 <p>
-  O Tinpety <strong>não vende seus dados pessoais</strong>. Compartilhamos informações
-  apenas com os provedores abaixo, estritamente para operar o aplicativo:
+  <strong>4.1.</strong> Você é o único responsável por todo o conteúdo publicado na plataforma
+  (fotos, textos e informações dos pessoais e animais), declarando possuir os direitos necessários
+  sobre esse conteúdo.
+</p>
+<p>
+  <strong>4.2.</strong> Ao publicar imagens ou informações, você concede ao Tinpety uma
+  <strong>licença não exclusiva, gratuita e limitada</strong> ao uso estritamente necessário
+  para o funcionamento e exibição da plataforma.
+</p>
+<p>
+  <strong>4.3.</strong> É vedado publicar conteúdo que:
+</p>
+<ul>
+  <li>Viole direitos de imagem, privacidade ou propriedade intelectual de terceiros;</li>
+  <li>Seja falso, enganoso ou fraudulento sobre animais ou pessoas;</li>
+  <li>Contenha linguagem ofensiva, discriminatória, sexual ou inadequada;</li>
+  <li>Promova, incentive ou documente maus-tratos a animais;</li>
+  <li>Represente animais de terceiros sem autorização do tutor.</li>
+</ul>
+<p>
+  O Tinpety se reserva o direito de remover conteúdo que viole estas diretrizes, sem
+  aviso prévio, e de cooperar com autoridades competentes quando necessário.
+</p>
+
+<!-- 5 -->
+<h2>5. Compartilhamento com terceiros</h2>
+<p>
+  <strong>5.1.</strong> O Tinpety <strong>não vende seus dados pessoais</strong>. Compartilhamos
+  informações apenas com os provedores abaixo, estritamente para operar o aplicativo:
 </p>
 <ul>
   <li>
-    <strong>Google Firebase</strong> — autenticação, banco de dados, armazenamento de fotos,
-    analytics e notificações push.
+    <strong>Google Firebase</strong> — autenticação, banco de dados (Firestore), armazenamento
+    de fotos (Cloud Storage), analytics e notificações push (FCM).
     <a href="https://firebase.google.com/support/privacy" target="_blank">Ver política</a>;
   </li>
   <li>
-    <strong>Google AdMob</strong> — exibição de anúncios.
+    <strong>Google AdMob</strong> — exibição de anúncios dentro do app.
     <a href="https://support.google.com/admob/answer/6128543" target="_blank">Ver política</a>;
   </li>
   <li>
@@ -169,121 +217,211 @@
     <a href="https://cloud.google.com/maps-platform/terms" target="_blank">Ver política</a>;
   </li>
   <li>
-    <strong>Google ML Kit</strong> — tradução de textos processada <strong>localmente no dispositivo</strong>,
-    sem envio de dados ao servidor.
+    <strong>Google ML Kit</strong> — tradução de textos processada <strong>localmente no
+    dispositivo</strong>, sem envio de dados ao servidor.
     <a href="https://developers.google.com/ml-kit/terms" target="_blank">Ver política</a>.
   </li>
 </ul>
-
-<!-- 5 -->
-<h2>5. Publicidade e ID de Publicidade</h2>
 <p>
-  <strong>5.1.</strong> Utilizamos o <strong>Google AdMob</strong> para exibir anúncios dentro
-  do aplicativo. O AdMob pode usar o <strong>ID de Publicidade (Advertising ID)</strong> do
-  dispositivo para personalizar anúncios com base nos seus interesses.
+  <strong>5.2.</strong> Os dados armazenados no Google Firebase podem ser processados em
+  servidores localizados fora do Brasil, incluindo os Estados Unidos, em conformidade com
+  as políticas de segurança e privacidade do Google e com os requisitos da LGPD para
+  transferência internacional de dados.
 </p>
 <p>
-  <strong>5.2.</strong> Você pode redefinir ou desativar a personalização de anúncios em:
-  <strong>Configurações do Android → Google → Anúncios</strong>.
-  No Android 12 ou superior, acesse <strong>Excluir ID de publicidade</strong>;
-  em versões anteriores, <strong>Cancelar personalização de anúncios</strong>.
-</p>
-<p>
-  <strong>5.3.</strong> Ao utilizar o Tinpety, você concorda com a exibição de publicidade
-  nos termos aqui descritos, conforme previsto também nos Termos de Uso do aplicativo.
+  <strong>5.3.</strong> Parceiros de publicidade (Google AdMob) podem operar de acordo com
+  suas próprias políticas de privacidade. Recomendamos a leitura dessas políticas quando
+  aplicável.
 </p>
 
 <!-- 6 -->
-<h2>6. Retenção dos dados</h2>
-<ul>
-  <li><strong>Conta e pets</strong> — enquanto a conta estiver ativa ou até exclusão solicitada;</li>
-  <li><strong>Mensagens de chat</strong> — enquanto a conversa existir no app;</li>
-  <li><strong>Fotos de pets</strong> — enquanto o pet estiver cadastrado;</li>
-  <li><strong>Logs de analytics</strong> — até 14 meses (padrão Firebase Analytics);</li>
-  <li><strong>Denúncias</strong> — até 2 anos após o encerramento da análise;</li>
-  <li><strong>Dados biométricos</strong> — somente no dispositivo; removidos ao desinstalar o app.</li>
-</ul>
+<h2>6. Publicidade e ID de Publicidade</h2>
+<p>
+  <strong>6.1.</strong> O Tinpety pode exibir <strong>anúncios e conteúdo publicitário</strong>
+  dentro do aplicativo como meio de custeio e sustentabilidade da plataforma, sem custo
+  adicional ao usuário pela visualização.
+</p>
+<p>
+  <strong>6.2.</strong> Os anúncios são veiculados pelo <strong>Google AdMob</strong>, que
+  pode utilizar o <strong>ID de Publicidade (Advertising ID)</strong> do dispositivo para
+  personalizar anúncios com base nos seus interesses e padrões de uso.
+</p>
+<p>
+  <strong>6.3.</strong> Você pode redefinir ou desativar a personalização de anúncios em:
+  <strong>Configurações do Android → Google → Anúncios</strong>. No Android 12 ou superior,
+  acesse <strong>"Excluir ID de publicidade"</strong>; em versões anteriores,
+  <strong>"Cancelar personalização de anúncios"</strong>.
+</p>
+<p>
+  <strong>6.4.</strong> Ao utilizar o Tinpety, você <strong>concorda expressamente</strong>
+  com a exibição de publicidade nos termos aqui descritos.
+</p>
 
 <!-- 7 -->
-<h2>7. Seus direitos (LGPD)</h2>
+<h2>7. Retenção dos dados</h2>
 <p>
-  Em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018)</strong>,
-  você tem direito a:
+  <strong>7.1.</strong> Os dados são mantidos pelo tempo necessário para as finalidades
+  descritas nesta política, respeitando os prazos legais aplicáveis:
 </p>
 <ul>
-  <li><strong>Acesso</strong> — solicitar cópia dos dados que possuímos sobre você;</li>
-  <li><strong>Correção</strong> — corrigir dados incompletos ou desatualizados;</li>
-  <li><strong>Exclusão</strong> — solicitar a exclusão da sua conta e dados pessoais;</li>
-  <li><strong>Portabilidade</strong> — receber seus dados em formato estruturado;</li>
-  <li><strong>Revogação de consentimento</strong> — retirar permissões de localização, câmera e
-      notificações a qualquer momento pelas configurações do Android;</li>
-  <li><strong>Oposição</strong> — opor-se ao uso dos seus dados para fins de publicidade personalizada.</li>
+  <li><strong>Conta e perfil</strong> — enquanto a conta estiver ativa ou até exclusão solicitada pelo usuário;</li>
+  <li><strong>Dados dos pets</strong> — enquanto o pet estiver cadastrado na conta;</li>
+  <li><strong>Fotos</strong> — enquanto associadas a um pet ou perfil ativo;</li>
+  <li><strong>Mensagens de chat</strong> — enquanto a conversa existir no app;</li>
+  <li><strong>Logs de analytics</strong> — até 14 meses (padrão do Firebase Analytics);</li>
+  <li><strong>Denúncias e tickets de suporte</strong> — até 2 anos após o encerramento da análise;</li>
+  <li><strong>Dados biométricos</strong> — somente no dispositivo; removidos ao desinstalar o app.</li>
+</ul>
+<p>
+  <strong>7.2.</strong> Após o encerramento da conta, os dados são eliminados conforme os
+  prazos acima, exceto quando a retenção for exigida por obrigação legal ou regulatória.
+</p>
+
+<!-- 8 -->
+<h2>8. Segurança dos dados</h2>
+<p>
+  <strong>8.1.</strong> Adotamos medidas técnicas e organizacionais para proteger seus dados
+  pessoais contra acesso não autorizado, alteração, divulgação ou destruição:
+</p>
+<ul>
+  <li>Todas as comunicações entre o app e os servidores utilizam <strong>HTTPS/TLS</strong>;</li>
+  <li>Senhas são gerenciadas pelo <strong>Firebase Authentication</strong>, com hash seguro — nunca armazenamos senhas em texto puro;</li>
+  <li>Credenciais biométricas ficam restritas ao dispositivo via <strong>Android Keystore</strong>;</li>
+  <li>O acesso ao banco de dados é protegido por <strong>Firestore Security Rules</strong>, garantindo que cada usuário acesse somente seus próprios dados;</li>
+  <li>O armazenamento de fotos é protegido por <strong>Firebase Storage Security Rules</strong>.</li>
+</ul>
+<p>
+  <strong>8.2.</strong> Em caso de incidente de segurança que afete seus dados pessoais,
+  notificaremos você e a <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong>
+  nos prazos previstos pela LGPD.
+</p>
+
+<!-- 9 -->
+<h2>9. Seus direitos como titular (LGPD)</h2>
+<p>
+  Em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018)</strong>,
+  você tem os seguintes direitos:
+</p>
+<ul>
+  <li><strong>Acesso</strong> — solicitar cópia dos dados pessoais que possuímos sobre você;</li>
+  <li><strong>Correção</strong> — corrigir dados incompletos, inexatos ou desatualizados;</li>
+  <li><strong>Exclusão</strong> — solicitar a exclusão de dados tratados com base em consentimento;</li>
+  <li><strong>Portabilidade</strong> — receber seus dados em formato estruturado e interoperável;</li>
+  <li><strong>Anonimização ou bloqueio</strong> — de dados desnecessários, excessivos ou tratados em desconformidade;</li>
+  <li><strong>Informação</strong> — sobre com quais entidades seus dados são compartilhados;</li>
+  <li><strong>Revogação de consentimento</strong> — retirar permissões de localização, câmera e notificações a qualquer momento nas configurações do Android;</li>
+  <li><strong>Oposição</strong> — opor-se ao uso dos seus dados para publicidade personalizada.</li>
 </ul>
 <p>
   Para exercer qualquer direito, envie um e-mail para
   <a href="mailto:privacidade@tinpety.com">privacidade@tinpety.com</a> com o assunto
   <strong>"Direitos LGPD"</strong>. Responderemos em até <strong>15 dias úteis</strong>.
+  Você também pode utilizar as opções disponíveis nas configurações do próprio aplicativo.
 </p>
-
-<!-- 8 -->
-<h2>8. Exclusão de conta e dados</h2>
-<p>
-  Para excluir sua conta e todos os dados associados — perfil, pets, fotos e mensagens —
-  acesse no app: <strong>Configurações → Minha Conta → Excluir Conta</strong>, ou envie
-  e-mail para <a href="mailto:privacidade@tinpety.com">privacidade@tinpety.com</a>.
-  A exclusão é irreversível e será concluída em até <strong>30 dias</strong>.
-</p>
-
-<!-- 9 -->
-<h2>9. Segurança</h2>
-<ul>
-  <li>Todas as comunicações utilizam <strong>HTTPS/TLS</strong>;</li>
-  <li>Senhas são gerenciadas pelo <strong>Firebase Authentication</strong> — nunca armazenamos
-      senhas em texto puro;</li>
-  <li>Credenciais biométricas ficam armazenadas apenas no dispositivo usando o
-      <strong>Android Keystore</strong>;</li>
-  <li>O acesso ao banco de dados é protegido por <strong>Firestore Security Rules</strong>,
-      garantindo que cada usuário acesse somente seus próprios dados.</li>
-</ul>
 
 <!-- 10 -->
-<h2>10. Crianças</h2>
+<h2>10. Desativação de conta e dados</h2>
 <p>
-  O Tinpety <strong>não é destinado a menores de 13 anos</strong> e não coleta
-  intencionalmente dados de crianças. Se você acredita que coletamos dados de um menor,
-  entre em contato imediatamente em
+  <strong>10.1.</strong> Você pode desativar sua conta a qualquer momento, diretamente pelo app em:
+  <strong>Perfil → Configurações → Desativar conta</strong>, ou enviando solicitação para
   <a href="mailto:privacidade@tinpety.com">privacidade@tinpety.com</a>.
+</p>
+<p>
+  <strong>10.2.</strong> A exclusão remove permanentemente seu perfil, dados dos pets,
+  fotos, mensagens e histórico de interações. A operação é <strong>irreversível</strong>
+  e será concluída em até <strong>30 dias</strong>.
+</p>
+<p>
+  <strong>10.3.</strong> O encerramento da conta não isenta o usuário de responsabilidades
+  decorrentes de ações praticadas durante o período de uso da plataforma.
+</p>
+<p>
+  <strong>10.4.</strong> O Tinpety se reserva o direito de suspender ou encerrar contas
+  que violem os Termos de Uso, com ou sem aviso prévio, sem prejuízo das providências
+  legais cabíveis.
 </p>
 
 <!-- 11 -->
-<h2>11. Alterações nesta Política</h2>
+<h2>11. Menores de idade</h2>
 <p>
-  O Tinpety pode atualizar esta política periodicamente. Alterações relevantes serão
-  comunicadas por <strong>notificação dentro do aplicativo</strong> com antecedência mínima
-  de <strong>15 dias</strong>. A data da última atualização está sempre indicada no topo
-  desta página.
+  <strong>11.1.</strong> O Tinpety <strong>não é destinado a menores de 18 anos</strong> e
+  não coleta intencionalmente dados de crianças. Usuários entre 13 e 17 anos devem
+  ter autorização expressa de seus responsáveis legais para utilizar o aplicativo,
+  conforme declarado nos Termos de Uso.
+</p>
+<p>
+  <strong>11.2.</strong> Se tivermos conhecimento de que coletamos dados de uma criança
+  sem a devida autorização, excluiremos essas informações imediatamente. Para reportar
+  um caso, envie e-mail para
+  <a href="mailto:privacidade@tinpety.com">privacidade@tinpety.com</a>.
 </p>
 
 <!-- 12 -->
-<h2>12. Legislação aplicável</h2>
+<h2>12. Cookies e tecnologias de rastreamento</h2>
+<p>
+  <strong>12.1.</strong> O aplicativo não utiliza cookies de navegador, uma vez que
+  se trata de um app nativo Android.
+</p>
+<p>
+  <strong>12.2.</strong> Utilizamos o <strong>Firebase Analytics</strong> para coletar
+  dados anonimizados de uso (telas visitadas, eventos de interação, tempo de sessão).
+  Esses dados não identificam você individualmente e são usados exclusivamente para
+  melhorias do produto.
+</p>
+<p>
+  <strong>12.3.</strong> O <strong>Google AdMob</strong> pode utilizar o ID de
+  Publicidade do dispositivo para rastrear interações com anúncios, conforme descrito
+  na Seção 6.
+</p>
+
+<!-- 13 -->
+<h2>13. Alterações nesta Política</h2>
+<p>
+  <strong>13.1.</strong> O Tinpety pode atualizar esta política periodicamente. Alterações
+  relevantes serão comunicadas por <strong>notificação dentro do aplicativo</strong> com
+  antecedência mínima de <strong>15 dias</strong> antes de entrarem em vigor.
+</p>
+<p>
+  <strong>13.2.</strong> A data da última atualização é sempre indicada no topo desta página.
+  A continuidade do uso do aplicativo após a vigência das alterações implica aceitação
+  das novas condições. Caso não concorde, você pode encerrar sua conta antes da data
+  de vigência.
+</p>
+
+<!-- 14 -->
+<h2>14. Legislação aplicável e foro</h2>
 <p>Esta política é regida pelas leis da <strong>República Federativa do Brasil</strong>, em especial:</p>
 <ul>
   <li>Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018);</li>
   <li>Marco Civil da Internet (Lei nº 12.965/2014);</li>
   <li>Código de Defesa do Consumidor (Lei nº 8.078/1990).</li>
 </ul>
-
-<!-- 13 -->
-<h2>13. Contato</h2>
 <p>
-  <strong>Responsável pelo tratamento de dados:</strong> Ragner — Tinpety<br/>
-  <strong>E-mail:</strong> <a href="mailto:privacidade@tinpety.com">privacidade@tinpety.com</a><br/>
-  <strong>App:</strong> Tinpety — disponível na Google Play Store
+  Qualquer litígio decorrente desta política será resolvido no
+  <strong>foro da comarca de domicílio do usuário</strong>, nos termos do
+  Código de Defesa do Consumidor.
+</p>
+
+<!-- 15 -->
+<h2>15. Contato e Encarregado de Dados (DPO)</h2>
+<p>
+  Para exercer seus direitos, esclarecer dúvidas ou registrar reclamações relacionadas
+  ao tratamento dos seus dados pessoais, entre em contato:
+</p>
+<ul>
+  <li><strong>Responsável:</strong> Tinpety;</li>
+  <li><strong>E-mail:</strong> <a href="mailto:privacidade@tinpety.com">privacidade@tinpety.com</a>;</li>
+  <li><strong>App:</strong> Tinpety — disponível na Google Play Store.</li>
+</ul>
+<p>
+  Você também pode registrar reclamações junto à
+  <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong>:
+  <a href="https://www.gov.br/anpd" target="_blank">www.gov.br/anpd</a>.
 </p>
 
 <div class="footer">
   <p><strong>Tinpety</strong> — Todos os direitos reservados.</p>
-  <p>Ao continuar usando o aplicativo, você confirma que leu e aceita esta política.</p>
+  <p>Ao continuar usando o aplicativo, você confirma que leu e aceita esta Política de Privacidade.</p>
 </div>
 
 </body>
