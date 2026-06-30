@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tinpety</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #212121;
+    background: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    text-align: center;
+  }
+  .box { max-width: 420px; }
+  h1 { color: #6200ea; font-size: 22px; margin-bottom: 8px; }
+  p  { color: #555; line-height: 1.6; margin-bottom: 20px; }
+  .btn {
+    display: inline-block;
+    background: #6200ea;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  .small { font-size: 12px; color: #999; margin-top: 16px; }
+</style>
+</head>
+<body>
+  <div class="box">
+    <h1>🐾 Tinpety</h1>
+    <p id="msg">Abrindo o aplicativo…</p>
+    <a id="playBtn" class="btn"
+       href="https://play.google.com/store/apps/details?id=app.tinpety">
+       Baixar o Tinpety
+    </a>
+    <p class="small">Se o app não abrir automaticamente, toque no botão acima.</p>
+  </div>
+
+  <script>
+    (function () {
+      var PLAY_STORE = "https://play.google.com/store/apps/details?id=app.tinpety";
+      var APP_STORE  = PLAY_STORE; // (sem versão iOS por enquanto)
+
+      // Extrai o id do pet do caminho: /pet/{petId}
+      var m = location.pathname.match(/\/pet\/([^\/?#]+)/);
+      var petId = m ? m[1] : "";
+
+      var ua = navigator.userAgent || "";
+      var isAndroid = /android/i.test(ua);
+      var isIOS = /iphone|ipad|ipod/i.test(ua);
+
+      if (isAndroid && petId) {
+        // intent:// → abre o app se instalado; senão usa o browser_fallback_url (Play Store)
+        var intentUrl =
+          "intent://tinpety.com/pet/" + petId +
+          "#Intent;scheme=https;package=app.tinpety;" +
+          "S.browser_fallback_url=" + encodeURIComponent(PLAY_STORE) + ";end";
+        window.location.replace(intentUrl);
+      } else if (isIOS) {
+        document.getElementById("msg").textContent =
+          "Baixe o Tinpety para ver este pet.";
+        document.getElementById("playBtn").setAttribute("href", APP_STORE);
+      } else {
+        // Desktop ou caminho desconhecido: mostra a opção de download
+        document.getElementById("msg").textContent =
+          "Baixe o Tinpety para ver este pet.";
+      }
+    })();
+  </script>
+</body>
+</html>
