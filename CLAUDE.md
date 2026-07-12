@@ -11,6 +11,7 @@ There is no build system, package manager, linter, or test suite. The site is pl
 ## Structure
 
 - `index.html` — minimal landing page linking to the policy pages.
+- `logomarcahorizontal.png` — horizontal Tinpety logo shown on the landing page.
 - `privacidade/index.html` — Privacy Policy and Terms of Use (Política de Privacidade e Termos de Uso).
 - `seguranca-infantil/index.html` — Child Safety Standards (Padrões de Segurança Infantil).
 - `404.html` — custom GitHub Pages not-found page linking back to home.
