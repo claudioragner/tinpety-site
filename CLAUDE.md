@@ -12,6 +12,7 @@ There is no build system, package manager, linter, or test suite. The site is pl
 
 - `index.html` — minimal landing page linking to the policy pages.
 - `logomarcahorizontal.png` — horizontal Tinpety logo shown on the landing page.
+- `favicon.png` — site favicon (white paw on purple `#5c26ff` rounded square), referenced by every page. Generated from `LogoPata.png`, the raw white-paw source art.
 - `privacidade/index.html` — Privacy Policy and Terms of Use (Política de Privacidade e Termos de Uso).
 - `seguranca-infantil/index.html` — Child Safety Standards (Padrões de Segurança Infantil).
 - `404.html` — custom GitHub Pages not-found page linking back to home.
