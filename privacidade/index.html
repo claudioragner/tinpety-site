@@ -109,7 +109,10 @@
 
   /* Rodapé (igual à home) */
   footer { border-top: 1px solid var(--line); padding: 48px 0 32px; font-size: 14px; line-height: 1.6; color: var(--text); }
-  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 32px; margin-bottom: 32px; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; margin-bottom: 32px; }
+  .footer-grid .partner { display: inline-flex; flex-direction: column; align-items: center; gap: 6px; font-size: 13px; }
+  .footer-grid .partner img { height: 80px; width: auto; margin-bottom: 0; transition: transform 0.15s ease; }
+  .footer-grid .partner:hover img { transform: translateY(-2px); }
   .footer-grid img { height: 30px; width: auto; margin-bottom: 12px; }
   .footer-grid h4 { font-size: 14px; color: var(--ink); margin-bottom: 12px; }
   .footer-grid ul { list-style: none; }
@@ -734,6 +737,13 @@
         <ul>
           <li><a href="mailto:suporte@tinpety.com">suporte@tinpety.com</a></li>
         </ul>
+      </div>
+      <div>
+        <h4>Parcerias</h4>
+        <a class="partner" href="https://doggotothemoon.io/" target="_blank" rel="noopener">
+          <img src="/parceria-dog.png" alt="DOG (Go To The Moon)"/>
+          <span>DOG • Go To The Moon</span>
+        </a>
       </div>
     </div>
     <div class="copyright">© 2026 Tinpety. Todos os direitos reservados.</div>
