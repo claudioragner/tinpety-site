@@ -10,9 +10,9 @@ There is no build system, package manager, linter, or test suite. The site is pl
 
 ## Structure
 
-- `index.html` — minimal landing page linking to the policy pages.
+- `index.html` — marketing home: sticky header with menu (CSS-only hamburger on mobile via `#menu-toggle` checkbox), hero, feature cards, Google Play CTA, footer linking the policy pages. Play Store links point to `https://play.google.com/store/apps/details?id=app.tinpety` (package from `assetlinks.json`). Uses the logo purple `#5c26ff` via CSS variables on `:root`.
 - `logomarcahorizontal.png` — horizontal Tinpety logo shown on the landing page.
-- `favicon.png` — site favicon (white paw on purple `#5c26ff` rounded square), referenced by every page. Generated from `LogoPata.png`, the raw white-paw source art.
+- `favicon.png` — site favicon (solid purple paw on transparent background), referenced by every page. Extracted from the paw in `logomarcahorizontal.png`; `LogoPata.png` is the user's white-outline paw art, not used by the site.
 - `privacidade/index.html` — Privacy Policy and Terms of Use (Política de Privacidade e Termos de Uso).
 - `seguranca-infantil/index.html` — Child Safety Standards (Padrões de Segurança Infantil).
 - `404.html` — custom GitHub Pages not-found page linking back to home.
@@ -24,5 +24,5 @@ There is no build system, package manager, linter, or test suite. The site is pl
 
 - All user-facing content is in **Brazilian Portuguese** (`lang="pt-BR"`); keep new content in Portuguese.
 - Each page is fully self-contained: inline `<style>` in the `<head>`, no external CSS/JS, no shared assets. When editing one policy page's styles, mirror the change in the other — `privacidade/` and `seguranca-infantil/` intentionally share the same look.
-- Shared visual identity: primary purple `#6200ea`, heading color `#1a1a2e`, body text `#212121`, `.highlight` boxes in `#f3e5f5`/`#4a148c`, Roboto/Arial font stack, centered max-width layout.
+- Policy pages' visual identity: primary purple `#6200ea`, heading color `#1a1a2e`, body text `#212121`, `.highlight` boxes in `#f3e5f5`/`#4a148c`, Roboto/Arial font stack, centered max-width layout.
 - Pages live in directories as `index.html` (e.g. `/privacidade/`) so URLs are clean, extension-less paths. Follow this pattern for new pages, and link them from `index.html`.
