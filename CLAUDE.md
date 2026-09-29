@@ -12,7 +12,8 @@ There is no build system, package manager, linter, or test suite. The site is pl
 
 - `index.html` — marketing home: sticky header with menu (CSS-only hamburger on mobile via `#menu-toggle` checkbox), hero, feature cards, Google Play CTA, footer linking the policy pages. Play Store links point to `https://play.google.com/store/apps/details?id=app.tinpety` (package from `assetlinks.json`). Uses the logo purple `#5c26ff` via CSS variables on `:root`.
 - `logomarcahorizontal.png` — horizontal Tinpety logo shown on the landing page.
-- `favicon.png` — site favicon (solid purple paw on transparent background), referenced by every page. Extracted from the paw in `logomarcahorizontal.png`; `LogoPata.png` is the user's white-outline paw art, not used by the site.
+- `app-icon.png` — app icon as shown on the Play Store (white outline paw from `LogoPata.png` on a purple `#5c26ff` rounded square, 512×512), used as the home hero image.
+- `favicon.png` — site favicon (solid purple paw on transparent background), referenced by every page. Extracted from the paw in `logomarcahorizontal.png`; `LogoPata.png` is the white-outline paw art from the Android app icon, the source for `app-icon.png`.
 - `privacidade/index.html` — Privacy Policy and Terms of Use (Política de Privacidade e Termos de Uso).
 - `seguranca-infantil/index.html` — Child Safety Standards (Padrões de Segurança Infantil).
 - `404.html` — custom GitHub Pages not-found page linking back to home.

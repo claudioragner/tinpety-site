@@ -72,13 +72,11 @@
   .hero h1 span { color: var(--brand); }
   .hero p.lead { font-size: 18px; max-width: 480px; margin-bottom: 32px; }
   .hero-visual { display: flex; justify-content: center; }
-  .paw-circle {
-    width: 340px; height: 340px; border-radius: 50%;
-    background: #ffffff;
-    box-shadow: 0 24px 60px rgba(92, 38, 255, 0.18);
-    display: flex; align-items: center; justify-content: center;
+  .app-icon {
+    width: 300px; height: 300px; display: block;
+    border-radius: 24%;
+    box-shadow: 0 24px 60px rgba(92, 38, 255, 0.28);
   }
-  .paw-circle img { width: 58%; height: auto; }
 
   /* Botão Google Play */
   .play-btn {
@@ -150,7 +148,7 @@
     .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 40px; }
     .hero h1 { font-size: 34px; }
     .hero p.lead { margin-left: auto; margin-right: auto; }
-    .paw-circle { width: 220px; height: 220px; }
+    .app-icon { width: 200px; height: 200px; }
     .cards { grid-template-columns: 1fr 1fr; }
     .footer-grid { grid-template-columns: 1fr; text-align: center; }
   }
@@ -195,7 +193,7 @@
         </a>
       </div>
       <div class="hero-visual">
-        <div class="paw-circle"><img src="/favicon.png" alt=""/></div>
+        <img class="app-icon" src="/app-icon.png" alt="Ícone do app Tinpety"/>
       </div>
     </div>
   </section>
